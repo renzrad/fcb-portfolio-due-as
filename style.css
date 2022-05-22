@@ -1,0 +1,88 @@
+/* Asterisk(All): Selector | {inside}: Rules
+san-serif backup font
+all rules should be end at semi colon
+*/
+
+/*Pag may conflict sa fonts mas priority nya ung naka specific*/
+/* * is global*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+	font-family: "Montserrat", serif;
+}
+/* # for id*/
+#profile {
+	height: 250px;
+	width: 250px;
+}
+
+#landing {
+	/*vh: viewport height - measured percentage of the height of
+	the device you are viewing your webpage in*/
+
+	height: 80vh;
+
+	/* arranges elements inside the parent element, will allow 
+	us to layout our landing section */
+	display: flex;
+
+	/*directs the elements inside display: flex*/
+	flex-direction: column;
+
+	/*centering elements if flex direction is in
+	column*/
+	align-items: center;
+
+	/*centering elements vertically*/
+	justify-content: center;
+}
+
+#gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	border-radius: 6px;
+}
+
+ /*. for class */
+.jumbotron {
+	background-color: transparent;
+}
+
+ul {
+	/*bullet style*/
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	/*hex*/
+	color: #007bff;
+}
+
+.tools {
+	/*line around the element*/
+	border: 5px solid #f2f2f2;
+
+	/*space outside the element*/
+	margin: 20px;
+
+	/*space inside element*/
+	padding: 25px;
+
+	height: 200px;
+
+	/*based on the total width of the parent*/
+	width: 75%;
+
+	color: white;
+}
+
+/*html for all*/
+html {
+	scroll-behavior: smooth;
+}
